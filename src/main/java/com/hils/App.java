@@ -24,8 +24,6 @@ public class App {
 					frame.addWindowListener(new WindowAdapter() {
 						@Override
 						public void windowClosing(WindowEvent e) {
-							//mongo end
-							//mongodb.end();
 							System.exit(0);
 						}
 					});
