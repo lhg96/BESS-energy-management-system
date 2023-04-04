@@ -22,7 +22,12 @@ import javax.swing.Timer;
 import com.hepi.hils.gui.setting.SettingInfoPanel;
 import com.hepi.hils.gui.setting.SettingOptionPanel;
 import com.hepi.hils.gui.summery.PCSBMSSummery;
+import com.hepi.hils.gui.tab.TabPanel;
 import com.hepi.hils.property.HProperty;
+import java.awt.GridLayout;
+import java.awt.FlowLayout;
+import java.awt.Component;
+import javax.swing.BoxLayout;
 
 /**
  * main gui
@@ -52,7 +57,6 @@ public class MainForm {
     private javax.swing.JPanel eastPanel;
     private javax.swing.JLabel iconLabel;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel14;
@@ -60,9 +64,8 @@ public class MainForm {
     private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTabbedPane tabbedPanel;
     private javax.swing.JPanel middlePanel;
     private javax.swing.JPanel summeryPanel;
     private javax.swing.JLabel timeLabel;
@@ -115,11 +118,18 @@ public class MainForm {
         
         summeryPanel.add(pcsbmsSummery1);
         summeryPanel.add(pcsbmsSummery2);
+        FlowLayout fl_middlePanel = new FlowLayout(FlowLayout.LEFT, 5, 5);
+        middlePanel.setLayout(fl_middlePanel);
         
         SettingOptionPanel settingOptionPanel = new SettingOptionPanel();
         middlePanel.add(settingOptionPanel);
         SettingInfoPanel settingInfoPanel = new SettingInfoPanel();
         middlePanel.add(settingInfoPanel);
+        
+        String tab1Title = "PCS/BMS #1"; 
+        TabPanel tab1 = new TabPanel(tab1Title);
+        tabbedPanel.addTab(tab1Title, tab1);
+        
 	}
 	
 	
@@ -140,9 +150,7 @@ public class MainForm {
         jPanel1 = new javax.swing.JPanel();
         summeryPanel = new javax.swing.JPanel();
         middlePanel = new javax.swing.JPanel();
-        jTabbedPane1 = new javax.swing.JTabbedPane();
-        jPanel10 = new javax.swing.JPanel();
-        jPanel9 = new javax.swing.JPanel();
+        tabbedPanel = new javax.swing.JTabbedPane();
         eastPanel = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
@@ -185,43 +193,12 @@ public class MainForm {
         jPanel1.add(summeryPanel);
 
         middlePanel.setBorder(javax.swing.BorderFactory.createTitledBorder("BESS Operation Settings"));
-        middlePanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
         jPanel1.add(middlePanel);
 
         centerPanel.add(jPanel1, java.awt.BorderLayout.NORTH);
 
-        jPanel10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
-        jPanel10.setLayout(jPanel10Layout);
-        jPanel10Layout.setHorizontalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 714, Short.MAX_VALUE)
-        );
-        jPanel10Layout.setVerticalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 411, Short.MAX_VALUE)
-        );
-
-        jTabbedPane1.addTab("PCS/BMS #2", jPanel10);
-
-        jPanel9.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 714, Short.MAX_VALUE)
-        );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 411, Short.MAX_VALUE)
-        );
-
-        jTabbedPane1.addTab("PCS/BMS #1", jPanel9);
-
-        centerPanel.add(jTabbedPane1, java.awt.BorderLayout.CENTER);
-        jTabbedPane1.getAccessibleContext().setAccessibleName("");
+        centerPanel.add(tabbedPanel, java.awt.BorderLayout.CENTER);
+        tabbedPanel.getAccessibleContext().setAccessibleName("");
 
         frame.getContentPane().add(centerPanel, java.awt.BorderLayout.CENTER);
 

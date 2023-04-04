@@ -6,11 +6,13 @@ package com.hepi.hils.gui.setting;
 
 import java.awt.BorderLayout;
 import java.awt.Component;
+import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.GridLayout;
 
 import javax.swing.BorderFactory;
+import javax.swing.JCheckBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
@@ -34,13 +36,24 @@ public class SettingInfoPanel extends JPanel {
     public SettingInfoPanel() {
         Border border = BorderFactory.createEtchedBorder();
         this.setBorder(border);
-        this.setLayout(new GridLayout(2, 4));
+        this.setLayout(new GridLayout(6,2));
         this.add(new JLabel(str[0]));
+        this.add(new JTextField(10));
         this.add(new JLabel(str[1]));
-        this.add(new JLabel(str[2]));
-        this.add(new JLabel(str[3]));
         
-        this.setSize(300, 400);;
+        Font font = new Font("맑은 고딕", Font.BOLD,12);
+        this.add(new JLabel("2 KW"));
+        
+        JLabel l2 = new JLabel(str[2]);
+        this.add(l2);
+        this.add(new JLabel("2 Set"));
+        this.add(new JCheckBox(str[3]));
+        this.add(new JLabel(""));
+        this.add(new JLabel(""));
+        this.add(new JLabel(""));
+        this.add(new JLabel(""));
+        this.add(new JLabel(""));
+        
         /*
         this.setLayout(new GridBagLayout());
         
