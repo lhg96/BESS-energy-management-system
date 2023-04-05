@@ -3,13 +3,8 @@ package com.hepi.hils;
 import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Toolkit;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
-
-import javax.swing.JFrame;
 
 import com.hepi.hils.gui.MainForm;
-import com.hepi.hils.gui.MainFrame;
 import com.hepi.hils.property.HProperty;
 	
 /**

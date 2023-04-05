@@ -31,6 +31,7 @@ public class PCSSummeryPanel extends JPanel {
 		this.setLayout(new GridLayout(6, 2));
 		//data load
 		//sample data
+		
 		PCSSummery summery = new PCSSummery(true,0.0, 0.0, 876.7,1.7,1);
 		
 		JCheckBox 	checkBox = new JCheckBox(str[0], summery.isPCS_FAULT());	

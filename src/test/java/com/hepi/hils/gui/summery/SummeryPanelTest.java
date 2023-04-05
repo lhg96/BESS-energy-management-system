@@ -2,13 +2,11 @@ package com.hepi.hils.gui.summery;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import java.awt.FlowLayout;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 import javax.swing.JFrame;
-
-import com.hepi.hils.gui.MainFrame;
-import java.awt.FlowLayout;
 import javax.swing.JPanel;
 
 public class SummeryPanelTest {
@@ -23,7 +21,7 @@ public class SummeryPanelTest {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					MainFrame frame = new MainFrame("HEPI HILS Manager");
+					JFrame frame = new JFrame("HEPI HILS Manager");
 					//create BatterySummeryPanel
 					frame.setLayout(new BorderLayout());
                                         

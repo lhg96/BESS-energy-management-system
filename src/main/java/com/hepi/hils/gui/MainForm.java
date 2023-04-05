@@ -98,7 +98,7 @@ public class MainForm {
             imageH = logoImage.getHeight(null);
             iconLabel.setSize(imageW, imageH);
         } catch (IOException ex) {
-            Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(this.getClass().getName()).log(Level.SEVERE, null, ex);
         }
         iconLabel.setIcon(new ImageIcon(logoImage));
         //topPanel.setSize(HProperty.screenW, imageH+5);

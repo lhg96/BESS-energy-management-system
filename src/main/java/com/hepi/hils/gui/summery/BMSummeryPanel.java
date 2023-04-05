@@ -29,7 +29,8 @@ public class BMSummeryPanel extends JPanel {
 	
 	public BMSummeryPanel() {
 		this.setLayout(new GridLayout(6, 2));
-		//data load
+		//data load		
+		
 		BMSSummery summery = new BMSSummery(false,45.5, 100.0, 873.3,0.0,3);
 		
 		JCheckBox 	checkBox = new JCheckBox(str[0], summery.isBMS_FAULT());

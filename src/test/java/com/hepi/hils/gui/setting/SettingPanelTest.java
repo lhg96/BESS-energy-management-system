@@ -8,7 +8,7 @@ import java.awt.event.WindowEvent;
 
 import javax.swing.JFrame;
 
-import com.hepi.hils.gui.MainFrame;
+import com.hepi.hils.gui.MainForm;
 import com.hepi.hils.property.HProperty;
 
 public class SettingPanelTest {
@@ -24,7 +24,7 @@ public class SettingPanelTest {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					MainFrame frame = new MainFrame("HEPI HILS Manager");
+					JFrame frame = new JFrame();
 					// create BatterySummeryPanel
 					frame.setLayout(new BorderLayout());
 					frame.setPreferredSize(new Dimension(w, h));;
