@@ -5,6 +5,7 @@ import java.awt.FlowLayout;
 import java.awt.GridLayout;
 
 import javax.swing.BorderFactory;
+import javax.swing.BoxLayout;
 import javax.swing.JCheckBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -45,6 +46,27 @@ public class TabPanel extends JPanel{
 		ControlPanel controlPanel = new ControlPanel();
 		topPanel.add(controlPanel);
 		this.add(topPanel, BorderLayout.NORTH);
+		//center panel
+		JPanel centerPanel 	= new JPanel(new BorderLayout());
+		GridMonitorPanel 						gridPanel 			   = new GridMonitorPanel();
+		PCSDetailStausPanel 			pcsPanel 			   = new PCSDetailStausPanel();
+		//right
+		JPanel rightPanel = new JPanel();
+		rightPanel.setLayout(new BoxLayout(rightPanel, BoxLayout.Y_AXIS));
+		
+		PCSControlCommandPanel 			pcsControlCommandPanel = new PCSControlCommandPanel();
+		ExternalControlSettingPanel 	externalControlSettingPanel = new ExternalControlSettingPanel();
+		rightPanel.add(pcsControlCommandPanel);
+		rightPanel.add(externalControlSettingPanel);
+		
+		
+		centerPanel.add(gridPanel, BorderLayout.WEST);
+		centerPanel.add(pcsPanel, BorderLayout.CENTER);
+		centerPanel.add(rightPanel, BorderLayout.EAST);
+		
+		this.add(centerPanel,BorderLayout.CENTER);
+		
+		
 		
 	}
 	
