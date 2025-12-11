@@ -49,25 +49,111 @@ HILS (Hardware-in-the-Loop Simulation) EMS is a comprehensive **Energy Managemen
 
 ## 📸 Screenshots
 
-### Main Application Interface
+### Software Interface
 
-![Main Panel](screenshots/mainPannel.png)
+#### Main Application Interface
+![Main Panel](screenshots/ems_main_monitoring_panel.png)
 *HILS EMS v2.0 - Complete 4-panel layout showing battery control, center tabs, and real-time monitoring*
 
-### Battery Pack SOC Control Panel
-
-![Battery Pack SOC Panel](screenshots/batteryPackSoCPannel.png)
+#### Battery Pack SOC Control Panel
+![Battery Pack SOC Panel](screenshots/battery_pack_soc_panel.png)
 *Left control panel - Battery SOC monitoring and charge/discharge control*
 
-### EMS Control Interface
-
-![EMS Control](screenshots/EMS_control.png)
+#### EMS Control Interface
+![EMS Control](screenshots/ems_control_panel.png)
 *Complete control interface with battery and PCS management*
 
-### Right Monitoring Panel
-
-![Right Panel](screenshots/rightPannel.png)
+#### Right Monitoring Panel
+![Right Panel](screenshots/ems_right_monitoring_panel.png)
 *Real-time monitoring - Power, frequency, voltage, temperature, alarms, and events*
+
+#### HILS Battery Simulator
+![Battery Simulator](screenshots/hils_battery_simulator_screen.jpeg)
+*Real-time battery simulation interface with cycle testing*
+
+#### Battery Cycle BTS Client
+![BTS Client](screenshots/battery_cycle_bts_client_screen.jpeg)
+*Battery Testing System client interface for cycle management*
+
+### Hardware & Laboratory Setup
+
+#### HILS Cabinet and Rack Configuration
+![HILS Cabinet](screenshots/hils_cabinet_and_rack_setup.jpeg)
+*Complete HILS hardware cabinet with battery simulator and control systems*
+
+#### HILS Laboratory Overview
+![Lab Overview](screenshots/hils_lab_racks_with_chamber.jpeg)
+*Laboratory setup showing equipment racks and thermal chamber*
+
+#### Power Monitoring Station
+![Power Station](screenshots/hils_lab_power_monitoring_station.jpeg)
+*Dedicated power monitoring station for real-time data acquisition*
+
+#### Server Rack Console
+![Server Rack](screenshots/hils_server_rack_console_open.jpeg)
+*Server rack with open console showing system configuration*
+
+#### Thermal Chamber Interior
+![Thermal Chamber](screenshots/thermal_chamber_interior_empty.jpeg)
+*Environmental thermal chamber for battery testing under controlled conditions*
+
+#### Thermal Monitor Device
+![Thermal Monitor](screenshots/thermal_monitor_device_in_cabinet.jpeg)
+*Temperature monitoring device installed in cabinet*
+
+### Battery & Power Systems
+
+#### Battery Module Stack
+![Battery Stack](screenshots/battery_module_stack_on_floor.jpeg)
+*Physical battery module stack for testing and validation*
+
+#### DC Power Supply Wiring
+![DC Wiring](screenshots/rack_dc_supplies_wiring.jpeg)
+*Rack-mounted DC power supplies with organized wiring*
+
+### Environmental Monitoring System
+
+#### LoRa Environment Sensor (Outdoor)
+![Outdoor Sensor](screenshots/rooftop_env_sensor_tripod_solar.jpeg)
+*Rooftop environmental sensor with tripod mount and solar panel*
+
+#### Indoor Environment Sensor
+![Indoor Sensor](screenshots/indoor_env_sensor_with_solar_pole.jpeg)
+*Indoor environmental monitoring sensor with solar power*
+
+#### Environment Sensor PCB (RAK4630)
+![Sensor PCB](screenshots/env_sensor_pcb_rak4630_closeup.jpeg)
+*Close-up of RAK4630-based environmental sensor PCB*
+
+#### Sensor Head Assembly
+![Sensor Head](screenshots/env_sensor_head_top_closeup.jpeg)
+*Top view of environmental sensor head with components*
+
+#### Solar Node Components
+![Solar Node](screenshots/solar_node_components_window_light.jpeg)
+*Solar-powered sensor node components in natural light*
+
+#### LoRa Sensor on Workbench
+![Workbench](screenshots/lora_env_sensor_workbench.jpeg)
+*LoRa environmental sensor development on workbench*
+
+#### Desk Solar Panel Prototype
+![Solar Proto](screenshots/desk_solar_panel_proto.jpeg)
+*Desktop solar panel prototype for sensor power testing*
+
+### Data Acquisition & Analysis
+
+#### DAQ Vibration Logger
+![Vibration Logger](screenshots/daq_vibration_logger_laptop.jpeg)
+*Data acquisition system for vibration logging and analysis*
+
+#### Emissions Analyzer Station
+![Emissions Station](screenshots/emissions_analyzer_station_overview.jpeg)
+*Complete emissions analyzer station for environmental monitoring*
+
+#### Emissions Analyzer (Close-up)
+![Emissions Cart](screenshots/emissions_analyzer_cart_close.jpeg)
+*Mobile emissions analyzer cart with measurement equipment*
 
 ---
 
